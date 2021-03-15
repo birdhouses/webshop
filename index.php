@@ -1,13 +1,13 @@
 <?php
 session_start();
 include_once("DBconfig.php");
-include_once("header.php");
-if(isset($_GET ["page"])) {
-    $page = $_GET["page"];
+include_once("header.html");
+if(isset($_GET["page"])) {
+  $page = $_GET["page"];
 } else {
-$page = "inloggen";
+  $page = "inloggen";
 }
-if ($page) {
-include ("pages/" . $page . ".php");
+if($page) {
+  include("pages/" . $page . ".php");
 }
-?>
+ ?>

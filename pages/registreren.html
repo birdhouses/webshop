@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <title>Webshop</title>
+    <link rel="stylesheet" href="../css/webshop.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+<div class="content">
+  <form name="registreren" class="form" method="POST">
+    <p id="pagina_titel">Registreren</p>
+    <input type="text" required name="voornaam" placeholder="voornaam" />
+    <input type="text" required name="achternaam" placeholder="achternaam" />
+    <input type="text" required name="straat" placeholder="Straat" />
+    <input type="text" required name="postcode" placeholder="Postcode" />
+    <input type="text" required name="woonplaats" placeholder="Woonplaats" />
+    <input type="email" required name="e-mail" placeholder="E-mail" />
+    <input type="password" required name="wachtwoord" placeholder="wachtwoord" />
+    <div class="g-recaptcha"
+    data-sitekey="6Ld7sN8UAAAAAIg1hJgj5bFhUl8-X5I4ZVzU9Qx4">
+    </div>
+    <br />
+    <div class="icon_container">
+      <input type="submit" class="icon" id="submit" name="submit" value="&rarr;" />
+    </div>
+    <a href="../index.php">Terug</a>
+    </form>
+    </div>
+  </body>
+</html>
