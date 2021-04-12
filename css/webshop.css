@@ -24,7 +24,7 @@ body {
   color: yellow;
   font-size: 3.0rem;
 }
-.icon: hover {
+.icon:hover {
   opacity: 0.9;
   filter: alpha(opacity=9);
   color: darkgreen;
@@ -48,7 +48,7 @@ li{
   font-size: 1.4rem;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
-li: hover {
+li:hover {
   background: #C2F98E;
   opacity: 0.8;
   filter: alpha(opacity=8);
@@ -90,7 +90,7 @@ input {
   text-align: center;
   font-size: 1.0rem;
 }
-input: hover {
+input:hover {
   background: #D8F9B6;
 }
 img {

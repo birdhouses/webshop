@@ -1,8 +1,8 @@
 <?php
 include("registreren.html");
-include("../bibliotheek/mailen.php");
-include("../DBconfig.php");
 if(isset($_POST["submit"])) {
+  include("../bibliotheek/mailen.php");
+  include("../DBconfig.php");
   $melding = "";
   $voornaam = htmlspecialchars($_POST["voornaam"]);
   $achternaam = htmlspecialchars($_POST["achternaam"]);

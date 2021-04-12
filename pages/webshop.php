@@ -2,30 +2,23 @@
 if(!isset($_SESSION["ID"])&&$_SESSION["STATUS"]!="ACTIEF"){
   echo "<script>
   alert('U heeft geen toegang tot deze pagina.');
-  location.href='../index.php';
+  location.href='index.php?page=inloggen'
   </script>";
-}
- ?>
-<?php
-if(isset($_SESSION["ID"]) && ($_SESSION['STATUS']!="ACTIEF")){
-  echo "<script>
-  alert('U heeft geen toegang tot deze pagina.');
-  location.href='../index.php'</script>";
 }
  ?>
 <!-- dit is het zoekformulier -->
 <script src="js/webshop.js"></script>
   <div class="content" >
     <form name="search" id="search" action="" method="POST" >
-      <div style="background-color: #C2F98E; height: 25px;
-      margin-top: 5%; padding: 0;">
-      <input type="text" style = "float: left; width: 70%;"
-      id="patroon" name="patroon" placeholder="Zoek albums" />
-      <input type="submit"
-      style="float: none; width: 10%; font-size: 1.2rem;"
-      id="zoeken" name="zoeken" value="&#128270;" /><br>
-    </div>
-  </form>
+        <div style="background-color: #C2F98E; height: 25px;
+        margin-top: 5%; padding: 0;">
+        <input type="text" style = "float: left; width: 70%;"
+        id="patroon" name="patroon" placeholder="Zoek albums" />
+        <input type="submit"
+        style="float: none; width: 10%; font-size: 1.2rem;"
+        id="zoeken" name="zoeken" value="&#128270;" /><br>
+        </div>
+    </form>
 </div>
 <?php
     // Hier wordt de sql-opdracht gegenereerd

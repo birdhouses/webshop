@@ -1,3 +1,9 @@
+<?php
+ if(isset($_SESSION[""]))
+ {
+  echo "<script>location.href='index.php?page=webshop';</script>";
+ }
+?>
 <div class="content">
   <form name="inloggen" method="POST" enctype="multipart/form-data" action="">
   <p id="page_titel">Inloggen</p>
